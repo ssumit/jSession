@@ -1,6 +1,14 @@
 Work in progress!
 
 Notes:
+Why do we need sessions?
+Sessions typically store some state associated with the user however this state is intended to be stored for a fixed
+timeout and not permanently. They are required when we work over stateless protocols like Http or even SMS.
+
+Example/Usage?
+shopping carts - we need to remember all the products that user selects even if the user is on payment page or simply
+browsing.
+
 There is a session manager who manages the sessions for the system.
 Each session might require some security verification process like exchanging  certificates.
 Though uncommon, each session might have multiple transport to support them.
