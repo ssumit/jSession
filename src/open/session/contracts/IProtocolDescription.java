@@ -1,4 +1,4 @@
-package open.session;
+package open.session.contracts;
 
 public interface IProtocolDescription {
 

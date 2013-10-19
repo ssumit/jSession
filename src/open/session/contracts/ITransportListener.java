@@ -1,4 +1,6 @@
-package open.session;
+package open.session.contracts;
+
+import open.session.TransportEvent;
 
 public interface ITransportListener {
 

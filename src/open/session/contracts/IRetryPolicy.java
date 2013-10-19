@@ -1,4 +1,4 @@
-package open.session;
+package open.session.contracts;
 
 import java.util.concurrent.TimeUnit;
 

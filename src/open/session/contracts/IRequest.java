@@ -1,4 +1,7 @@
-package open.session;
+package open.session.contracts;
+
+import open.session.RequestPriority;
+import open.session.RequestStatus;
 
 public interface IRequest {
 

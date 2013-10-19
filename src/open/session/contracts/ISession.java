@@ -1,4 +1,6 @@
-package open.session;
+package open.session.contracts;
+
+import open.session.SessionState;
 
 public interface ISession {
 
