@@ -2,7 +2,7 @@ package open.session.contracts;
 
 import open.session.SessionEvent;
 
-public interface IClient {
+public interface ISessionClient {
 
     public boolean hasUnreadData(SessionEvent sessionEvent);
 

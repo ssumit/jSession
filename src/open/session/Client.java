@@ -1,4 +1,4 @@
 package open.session;
 
-public class Key {
+public class Client {
 }

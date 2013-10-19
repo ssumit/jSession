@@ -1,7 +1,6 @@
 package open.session.persistence;
 
-public abstract class ICacheEntry {
-    private long _ttl;
+public interface ICacheEntry {
 
-    public abstract void isValid();
+    public void isValid();
 }

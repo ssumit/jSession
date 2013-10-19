@@ -1,13 +1,13 @@
 package open.session.contracts;
 
-import open.session.Key;
+public interface ISessionManager<KEY> {
 
-public interface ISessionManager {
+    public void closeSession(KEY key);
 
-    public void closeSession(Key key);
+    public ISession getSession(KEY key);
 
-    public ISession getSession(Key key);
-
-    public ISession openSession(Key key);
+    //requires all required data/protocol to establish session: like handshaking protocol to establish credentials
+    //question: does choice of protocol requires to fix the transport now??
+    public ISession openSession(KEY key);
 
 }

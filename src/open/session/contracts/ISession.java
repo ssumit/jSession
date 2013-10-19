@@ -4,7 +4,7 @@ import open.session.SessionState;
 
 public interface ISession {
 
-    public void addClient(IClient client);
+    public void addClient(ISessionClient sessionClient);
 
     public Object getAttribute(String attributeKey);
 
@@ -14,7 +14,7 @@ public interface ISession {
 
     public void removeAttribute(String attributeKey);
 
-    public void removeClient(IClient client);
+    public void removeClient(ISessionClient sessionClient);
 
     public void setAttribute(String attributeKey, Object attribute);
 
