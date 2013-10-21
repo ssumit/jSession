@@ -27,4 +27,9 @@ public class SessionManager<KEY> implements ISessionManager<KEY> {
         _cache.put(key, session);
         return session;
     }
+
+    @Override
+    public ISession openSession(KEY key, ISessionEstablishmentProtocol sessionEstablishmentProtocol) {
+        return openSession(key);
+    }
 }

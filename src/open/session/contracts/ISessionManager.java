@@ -1,5 +1,7 @@
 package open.session.contracts;
 
+import open.session.ISessionEstablishmentProtocol;
+
 public interface ISessionManager<KEY> {
 
     public void closeSession(KEY key);
@@ -10,4 +12,5 @@ public interface ISessionManager<KEY> {
     //question: does choice of protocol requires to fix the transport now??
     public ISession openSession(KEY key);
 
+    public ISession openSession(KEY key, ISessionEstablishmentProtocol sessionEstablishmentProtocol);
 }
