@@ -1,4 +1,4 @@
-package open.session.exceptions;
+package open;
 
 public class RequestQueueOverFlow extends Exception {
 }

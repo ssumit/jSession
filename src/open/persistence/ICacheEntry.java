@@ -1,4 +1,4 @@
-package open.session.persistence;
+package open.persistence;
 
 public interface ICacheEntry {
 

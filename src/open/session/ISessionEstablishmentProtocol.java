@@ -1,6 +1,6 @@
 package open.session;
 
-import open.session.contracts.IRetryPolicy;
+import open.IRetryPolicy;
 
 public interface ISessionEstablishmentProtocol {
 

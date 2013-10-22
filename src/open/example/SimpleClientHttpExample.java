@@ -1,10 +1,10 @@
-package open.session.example;
+package open.example;
 
 import open.session.SessionManager;
 import open.session.contracts.ISession;
 import open.session.contracts.ISessionManager;
-import open.session.persistence.ICache;
-import open.session.persistence.SimpleCache;
+import open.persistence.ICache;
+import open.persistence.SimpleCache;
 
 public class SimpleClientHttpExample {
 

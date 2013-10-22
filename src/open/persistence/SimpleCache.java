@@ -1,4 +1,4 @@
-package open.session.persistence;
+package open.persistence;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

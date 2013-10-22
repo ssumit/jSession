@@ -1,6 +1,4 @@
-package open.session.contracts;
-
-import open.session.exceptions.RequestQueueOverFlow;
+package open;
 
 public interface IRequestQueue {
 

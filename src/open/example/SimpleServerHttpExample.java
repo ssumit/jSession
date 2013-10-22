@@ -1,4 +1,4 @@
-package open.session.example;
+package open.example;
 
 public class SimpleServerHttpExample {
     //server mode :

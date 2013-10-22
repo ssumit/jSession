@@ -2,7 +2,7 @@ package open.session;
 
 import open.session.contracts.ISession;
 import open.session.contracts.ISessionManager;
-import open.session.persistence.ICache;
+import open.persistence.ICache;
 
 public class SessionManager<KEY> implements ISessionManager<KEY> {
     private ICache<KEY> _cache;

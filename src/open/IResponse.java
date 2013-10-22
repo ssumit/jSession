@@ -1,4 +1,4 @@
-package open.session.contracts;
+package open;
 
 public interface IResponse {
 }

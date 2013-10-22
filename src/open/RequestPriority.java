@@ -1,4 +1,4 @@
-package open.session;
+package open;
 
 public enum RequestPriority {
 }

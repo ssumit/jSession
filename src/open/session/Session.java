@@ -2,7 +2,7 @@ package open.session;
 
 import open.session.contracts.ISession;
 import open.session.contracts.ISessionClient;
-import open.session.persistence.ICacheEntry;
+import open.persistence.ICacheEntry;
 
 public class Session implements ISession, ICacheEntry{
     @Override
