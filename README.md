@@ -32,4 +32,27 @@ Mentioning them should be optional and in an elegant way.
 Since it should not, the challenge is to model them in a flexible way.
 
 One of the ideas is to introduce a transport picker who is able to return the list of transport protocols that can
-complete any arbitrary request.
+complete any arbitrary request. One of the ways this can be done is that request is aware of the minimal transport
+feature set that it requires and the transport picker can then return a list of appropriate transport protocols. However,
+apparently it appears that request are generally aware of transport protocols to be used. This is essentially because
+transport agnostic APIs are still rare.
+
+This lib is likely to be built and tested for transport-aware APIs and then possibly we will explore the transport
+agnostic APIs.
+
+Transport Agnostic APIs
+
+How should a transport api look? (how to write a generic request)?
+
+Things that might matter are likely to be transport protocol properties:
+1) Reliable delivery, Best effort delivery
+2) Stream-based(data arrive in same order), Datagram-based(data may arrive out of order)
+3) LAN, MAN, WAN etc (rtt etc)
+4) memory limits. (packet sizes, overall data)
+5) secure/authenticated
+6) duplex, half-closed
+7) congestion control
+
+Now deploying them in current internet infrastructure can be tough. There should be understanding that the server and/or
+middle-boxes may not understand any new (de)multiplexing that we might like to introduce. We are likely to restrict
+ourselves to work above IP.
