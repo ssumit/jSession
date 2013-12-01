@@ -1,4 +1,4 @@
-package open.example;
+package open.example.firstExample;
 
 import open.session.SessionManager;
 import open.session.contracts.ISession;
